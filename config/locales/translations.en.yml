@@ -1,0 +1,23 @@
+---
+:en:
+  lesli_letter:
+    notes:
+      toolbar_search_placeholder: Search by title or content...
+      view_title: Notes
+  lesli:
+    shared:
+      view_discussions: Discussions
+      button_add_new: Add new
+      button_reload: Reload
+      view_files: Files
+      view_quick_actions: Quick actions
+      button_list: List
+      button_save: Save
+      button_delete: Delete
+      button_edit: Edit
+      view_status_active: Active
+      view_status_inactive: Inactive
+      button_settings: Settings
+    application:
+      navigation_logout: Logout
+      navigation_my_profile: My profile
