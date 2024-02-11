@@ -79,19 +79,19 @@ onMounted(() => {
 <template>
     <lesli-application-container>
         <lesli-header :title="translations.notes.view_title">
-            <lesli-button-link main icon="add" :to="url.letter('notes/new')">
+            <lesli-link main icon="add" :to="url.letter('notes/new')">
                 {{ translations.lesli.shared.button_add_new }}
-            </lesli-button-link>
+            </lesli-link>
         </lesli-header>
         <lesli-toolbar :search-placeholder="translations.notes.toolbar_search_placeholder"></lesli-toolbar>
         <div class="columns mt-4 notebooks-notes">
-            <div class="column is-3 notes">
+            <div class="column is-3 has-background-white notes">
                 <div v-for="note in storeNotes.index.records" @click="selectNote(note.id)">
                     <h5>{{ note.title }}</h5>
                     <p>{{ note.excerpt }}</p>
                 </div>
             </div>
-            <div class="column editor">
+            <div class="column has-background-white editor">
                 <editor-rich-text 
                     @save="storeNote.updateContent()"
                     v-model="storeNote.note.content">

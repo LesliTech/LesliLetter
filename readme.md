@@ -1,5 +1,5 @@
 <p align="center">
-	<img width="90" alt="LesliLetter logo" src="./app/assets/images/lesli_letter/notes-logo.svg" />
+	<img width="90" alt="LesliLetter logo" src="./app/assets/images/lesli_letter/letter-logo.svg" />
     <h3 align="center">Notes & Notebooks for the Lesli Framework.</h3>
 </p>
 
@@ -26,13 +26,13 @@ bundle add lesli_letter
 
 ```shell
 # Setup database
-rake lesli:db:setup
+rake lesli:db:start
 ```
 
 ```ruby
 # Load LesliGuard
 Rails.application.routes.draw do
-    mount LesliLetter::Engine => "/notes"
+    mount LesliLetter::Engine => "/letter"
 end
 ```
 
