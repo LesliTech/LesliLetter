@@ -43,7 +43,7 @@ const url = inject("url")
 
 
 // · import lesli stores
-import { useNotebooks } from "LesliLetter/stores/notebooks"
+import { useNotebooks } from "LesliLetter/vue/stores/notebooks"
 
 
 // · 
